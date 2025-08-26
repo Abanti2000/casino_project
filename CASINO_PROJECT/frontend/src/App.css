@@ -1,0 +1,86 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* reduced from 70px */
+  background-color: #E32526;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Reward Center button */
+.nav-item.reward-center {
+  background: linear-gradient(135deg, #ff4444, #cc1100);
+  color: #fff;
+  border-radius: 50%;
+  width: 42px;   /* reduced from 50px */
+  height: 42px;  /* reduced from 50px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  box-shadow: 0 2px 6px rgba(255, 68, 68, 0.3);
+  border: 2px solid #fff;
+}
+
+.nav-item.reward-center svg {
+  color: #fff;
+  margin-bottom: 1px;
+  font-size: 16px; /* smaller */
+}
+
+.nav-item.reward-center span {
+  font-size: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Normal nav items */
+.nav-item {
+  text-align: center;
+  font-size: 12px; /* reduced */
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item svg {
+  font-size: 18px; /* reduced */
+  display: block;
+  margin: 0 auto 2px;
+}
+
+.nav-item:active,
+.nav-item:hover {
+  color: #007bff;
+}
+
+/* Menu Button */
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.menu-button:active,
+.menu-button:hover {
+  color: #007bff;
+}
+
+/* Page background */
+.body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1d1d1d;
+}
